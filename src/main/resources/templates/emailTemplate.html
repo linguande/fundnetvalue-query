@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>title</title>
+    <style>
+        .red {
+            color: red;
+        }
+
+        .green {
+            color: green;
+        }
+    </style>
+
+</head>
+<body>
+<table>
+    <thead>
+    <tr>
+        <th>Code</th>
+        <th>名称</th>
+        <th>当前净值</th>
+        <th>估算净值</th>
+        <th>%</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="list,iterStat : ${lists}">
+        <td th:text="${list.fundcode}"></td>
+        <td th:text="${list.name}"></td>
+        <td th:text="${list.dwjz}"></td>
+        <td th:text="${list.gsz}"></td>
+        <td th:class="${#strings.startsWith(list.gszzl,'-')} ? 'green':'red'" th:text="${list.gszzl}">
+        </td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
