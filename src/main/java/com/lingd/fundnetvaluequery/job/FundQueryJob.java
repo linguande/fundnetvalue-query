@@ -30,9 +30,6 @@ public class FundQueryJob {
                 resultList.add(fundInfo);
             }
         }
-        //System.out.println(resultList);
-        //String content = mailService.createContent(resultList);
-        //mailService.sendMail("296849680@qq.com", content);
         mailService.sendTemplateMail(resultList);
     }
 
