@@ -20,7 +20,6 @@ public class MailServiceImplTest {
 
     @Test
     public void sendMail() {
-        //mailService.sendMail("296849680@qq.com","");
         fundQueryJob.fundQuery();
 
     }
