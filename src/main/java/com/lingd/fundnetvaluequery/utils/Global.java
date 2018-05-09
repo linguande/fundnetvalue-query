@@ -10,7 +10,7 @@ import java.util.List;
  */
 public class Global {
 
-    private static String[] fundCodeList = new String[]{"161725", "161726", "001268", "001266"};
+    private static String[] fundCodeList = new String[]{"161725", "161726", "001268", "001266", "161724", "161030"};
 
     private static String url = "http://fundgz.1234567.com.cn/js/";
 
